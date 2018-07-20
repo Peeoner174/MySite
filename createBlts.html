@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VoteFactory</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="./app.js"></script>
+</head>
+
+<body style="height:1500px">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./index.html">Vote Factory</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="./listBallots.html">Current Ballots</a>
+                </li>
+                <li>
+                    <a href="#">Completed Ballots</a>
+                </li>
+                <li class="active">
+                    <a href="./createBlts.html">Create Ballot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="createBallot">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <h1>Create a new vote</h1>
+        <br>
+
+        <h3>The cost of creating a new vote <span class="black"><span id="cost"></span> META</span> ETH</h3>
+
+        
+
+        <br>
+        <label for="amount">Question:</label><input id="text" type="text" placeholder="Text your vote" id="amount"></input>
+        <input id="numb" type="text" placeholder="ETH"  id="receiver"></input>
+        <br><br>
+        <button id="send" onclick="App.createVote()">Create Vote</button><h5>ID vote that you created<span class="black"><span id="cost"></span> META</span></h5>
+        <br>
+        
+     
+        <label for="receiver">Answer:</label><input id="text" type="text" placeholder="Text your answer"  id="receiver"></input>
+           <input id="numb" type="text" placeholder="Vote ID"  id="receiver"></input>
+           <button type="button" class="btn btn-link">Add Answer</button>        
+        <br>
+        <br>
+        <button id="send" onclick="App.createVote()">Start Voting</button>
+        <br>
+        <br>
+        <span id="status"></span>
+        <br/>
+        <br/>
+        <div class="span12 text-center">
+                <span class="hint">
+                    <strong>Hint:</strong> open the browser developer console to view any errors and warnings.
+                </span>
+            </div>
+</body
+</html>

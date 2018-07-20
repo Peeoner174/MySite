@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="css/main-page.css" rel="stylesheet">
+</head>
+
+<body style="height:1500px">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header ">
+				<a class="navbar-brand"   href="#">Vote Factory</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="./listBallots.html">Current Ballots</a>
+				</li>
+				<li>
+					<a href="#">Completed Ballots</a>
+				</li>
+				<li>
+					<a href="./createBlts.html">Create Ballot</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<img alt="Putin" src="./img/putin.jpg">
+			</div>
+			<div class="col-md-4">
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<blockquote class="blockquote-reverse">
+					<p class="mb-0">Whenever the masses seized political power, then it was happiness rather than truth and beauty that mattered.</p>
+					<footer class="blockquote-footer">Aldous Huxley in
+						<cite title="Source Title">Brave New World</cite>
+					</footer>
+				</blockquote>
+				<br/>
+				<br/>
+				<div class="row">
+					<div class="col-md-4">		
+						<a href="https://github.com/Peeoner174"><img alt="GitHub" src="./img/gh_logo.png" class="rounded float-right" id="git" >
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://vk.com/8evident"><img alt="GitHub" src="./img/vk.png" class="rounded float-right">
+						</a>
+					</div>
+					<div class="col-md-4">
+						<img alt="GitHub" src="./img/donate.png" class="rounded float-right">
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/><br/>
+		<div class="span12 text-center">
+		<span class="hint">
+				<strong>Hint:</strong> open the browser developer console to view any errors and warnings.
+		</span>
+		</div>
+	</div>
+	<script>
+		var max_w = 50 + 'px';
+		var max_h = 50 + 'px';
+		$(".rounded").each(function (i) {
+			var this_w = $(this).height();
+			var this_h = $(this).width();
+			if (this_w / this_h < max_w / max_h) {
+				var h = max_h;
+				var w = Math.ceil(max_h / this_h * this_w);
+			} else {
+				var w = max_w;
+				var h = Math.ceil(max_w / this_w * this_h);
+			}
+			$(this).css({
+				height: h,
+				width: w
+			});
+		});
+	</script>
+
+</body>
+
+</html>

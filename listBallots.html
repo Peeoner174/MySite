@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  
+  </head>
+  <body style="height:1500px">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <a class="navbar-brand"   href="./index.html">Vote Factory</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="./listBallots.html">Current Ballots</a>
+                    </li>
+                    <li>
+                        <a href="#">Completed Ballots</a>
+                    </li>
+                    <li>
+                        <a href="./createBlts.html">Create Ballot</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br/>
+        <br/>
+        <br/>
+        
+    <div class="container" >
+      <div class="row"><div class="col-lg-6"><h1 class="text-left">Elections</h1></div>
+      <br><div class="span12 text-right"><input id="numb" type="text" placeholder="Vote ID"  id="receiver"></input><button type="button" class="btn btn-link">Stop your vote</button></div>
+
+        </div>
+          <div class="col-lg-12"></div>
+          <hr/>
+          <br/>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+         
+          <div id="content" style="display: none;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Votes</th>
+                </tr>
+              </thead>
+              <tbody id="candidatesResults">
+              </tbody>
+            </table>
+            <hr/>
+            <form onSubmit="App.castVote(); return false;">
+              <div class="form-group">
+                <label for="candidatesSelect">Select Candidate</label>
+                <select class="form-control" id="candidatesSelect">
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Vote</button>
+              <hr />
+            </form>
+            <p id="accountAddress" class="text-center"></p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

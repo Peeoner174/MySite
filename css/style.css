@@ -1,0 +1,67 @@
+
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  #text {
+    width: 500px;
+    padding: 1px;
+    font-size: 16px;
+  }
+
+  #numb {
+    width: 70px;
+    padding: 1px;
+    font-size: 16px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  h1, h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #AAA;
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-weight: normal;
+    color: #AAA;
+    font-size: 24px;
+  }
+  
+  .black {
+    color: black;
+  }
+  
+  #balance {
+    color: black;
+  }
+  
+  .hint {
+    color: #666;
+  }
+  
+  hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    border-width: 0.5px;
+    color: #4346;
+    
+  }
+
+
